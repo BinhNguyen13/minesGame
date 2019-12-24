@@ -1,0 +1,86 @@
+body {
+  margin: 0 auto;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  overflow-x: hidden;
+  overflow-y: auto; }
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+button {
+  outline: none; }
+
+a {
+  text-decoration: none; }
+
+input {
+  border: none; }
+
+select {
+  border: none;
+  background: white; }
+
+.mine {
+  width: 900px;
+  height: 900px;
+  border: 2px solid black;
+  margin: 100px auto; }
+  .mine .board {
+    position: relative;
+    width: 100%;
+    height: 900px; }
+    .mine .board button {
+      font-size: 25px;
+      padding: 20px 30px;
+      position: absolute;
+      top: -90px;
+      left: 43.7%; }
+    .mine .board .row {
+      width: 100%;
+      height: 50px;
+      display: grid;
+      grid-template-columns: repeat(16, 1fr); }
+      .mine .board .row .cell {
+        background: gray;
+        position: relative;
+        border: 1px solid black;
+        box-sizing: border-box; }
+        .mine .board .row .cell--open {
+          background: white; }
+        .mine .board .row .cell p {
+          position: absolute;
+          top: -13px;
+          left: 20px;
+          font-size: 25px;
+          line-height: 25px;
+          font-weight: bold; }
+        .mine .board .row .cell i {
+          position: absolute;
+          top: 7px;
+          left: 14px;
+          font-size: 25px;
+          line-height: 25px;
+          font-weight: bold; }
+        .mine .board .row .cell--true {
+          background: blue; }
+        .mine .board .row .cell--false {
+          background: red; }
+      .mine .board .row .cell:hover {
+        background: #d9d9d9; }
+    .mine .board .row:last-child {
+      margin-bottom: 0; }
+  .mine .boardHead {
+    height: 100px;
+    border-bottom: 1px solid black; }
+    .mine .boardHead__flagCount {
+      padding-top: 30px;
+      text-align: right;
+      margin-right: 40px;
+      font-size: 30px;
+      line-height: 30px; }

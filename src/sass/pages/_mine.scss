@@ -1,0 +1,79 @@
+.mine{
+    
+    width: 900px;
+    height: 900px;
+    border:2px solid black;
+    margin: 100px auto;
+    .board{
+        position: relative;
+        width: 100%;
+        height: 900px;
+        button {
+            font-size:25px;
+            padding:20px 30px;
+            position: absolute;
+            top:-90px;
+            left:43.7%
+        }
+        .row{
+            
+            width: 100%;
+            height: 50px;
+            display:grid;
+            grid-template-columns: repeat(16,1fr);
+            
+            .cell {
+                background: gray;
+                position: relative;
+                border:1px solid black;
+                box-sizing: border-box;
+                &--open{
+                    background: white;
+                }
+                p { 
+                    position: absolute;
+                    top:-13px;
+                    left:20px;
+                    font-size: 25px;
+                    line-height: 25px;
+                    font-weight: bold;
+                }
+                i {
+                    position: absolute;
+                    top:7px;
+                    left:14px;
+                    font-size: 25px;
+                    line-height: 25px;
+                    font-weight: bold;
+                }
+                &--true {
+                    background:blue;
+                }
+                &--false {
+                    background: red;
+                }
+            }
+            .cell:hover {
+                background:#d9d9d9;
+            }
+        }
+        .row:last-child{
+            margin-bottom: 0;
+        }
+       
+    }
+    .boardHead{
+        height: 100px;
+       
+        border-bottom: 1px solid black;
+        &__flagCount {
+            padding-top:30px;
+            text-align: right;
+            margin-right:40px;
+            font-size:30px;
+            line-height: 30px;
+            
+        }
+    }
+    
+}
